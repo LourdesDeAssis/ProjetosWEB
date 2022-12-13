@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Site_Parallax.css">
+  <title>Site Parallax</title>
+</head>
+<body>
+    <nav class="nav">
+      <h1>Meses de Conscientização</h1>
+      <a href="#one">Setembro</a>
+      <a href="#two">Outubro</a>
+      <a href="#three">Novembro</a>
+    </nav>
+    <main>
+      <section  id="one">
+        <h2 >Setembro Amarelo</h2>
+        <div class="div-one">
+        <p id="text">Todos nós devemos atuar ativamente na conscientização da importância que a vida tem e ajudar na prevenção do suicídio, tema que ainda é visto como tabu. É importante falar sobre o assunto para que as pessoas que estejam passando por momentos difíceis e de crise busquem ajuda e entendam que a vida sempre vai ser a melhor escolha.
+          Quando uma pessoa decide terminar com a sua vida, os seus pensamentos, sentimentos e ações apresentam-se muito restritivos, ou seja, ela pensa constantemente sobre o suicídio e é incapaz de perceber outras maneiras de enfrentar ou de sair do problema. Essas pessoas pensam rigidamente pela distorção que o sofrimento emocional impõe.</p>
+      </div>
+      </section> 
+      
+      <section  id="two">
+        <h2>Outubro Rosa</h2>
+        <div class="two-div">
+         <div></div>
+         <div>
+           <p id="text">O período é celebrado no Brasil e no exterior com o objetivo de compartilhar informações e promover a conscientização sobre o câncer de mama, a fim de contribuir para a redução da incidência e da mortalidade pela doença.
+
+            O objetivo do Outubro Rosa 2022 é divulgar informações sobre o câncer de mama e fortalecer as recomendações do Ministério da Saúde para prevenção, diagnóstico precoce e rastreamento da doença.
+          
+            Para o Brasil, foram estimados 66.280 casos novos de câncer de mama em 2021, com um risco estimado de 61,61 casos a cada 100 mil mulheres.</p>
+         </div>
+         <div></div>
+        </div>
+      </section>
+      
+      <section  id="three">
+        <h2>Novembro Azul</h2>
+        <div class="text-blck">
+          <p id="text">O Novembro Azul é uma campanha de conscientização realizada por diversas entidades no mês de novembro dirigida 
+            à sociedade e, em especial, aos homens, para conscientização a respeito de doenças masculinas, com ênfase na prevenção e no diagnóstico precoce do câncer de próstata.
+            No Brasil, o Novembro Azul foi criado pelo Instituto Lado a Lado pela Vida, com o objetivo de quebrar o preconceito masculino 
+            de ir ao médico e, quando necessário, fazer o exame de toque. Em 2014, o Instituto realizou 2.200 
+            ações em todo o Brasil, com a iluminação de pontos turísticos, adesão de celebridades, ativações em estádios de futebol, corridas 
+            de rua e autódromos, além de palestras informativas, intervenções em eventos populares e pedágios nas estradas.
+          </p>
+        </div>
+        
+        <div id="crsl-egt" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#crsl-egt" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#crsl-egt" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#crsl-egt" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="data:image/jpeg;base64,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" class="d-block" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0OITQ6fCg9_MM_G34Sgoew7_5ALQ-Pib9FQ&usqp=CAU" class="d-block" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtKd9YWCu1qfDiMUKTD2RwzGFKtuZAPbvbGA&usqp=CAU" class="d-block" style="width:100%">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#crsl-egt" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#crsl-egt" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+      </section>
+      
+      <section class="rodape">
+
+        <div class="qdr-conjunto">
+    
+            <div class="qdr">
+              <h3>Fale Conosco</h3>
+              <a href="#"> <i class="fas fa-phone"></i> +55 (85) 940028922 </a>
+              <a href="#"> <i class="fas fa-phone"></i> +55 (85) 998500376 </a>
+              <a href="#"> <i class="fas fa-envelope"></i> agendsusatendimento@gmail.com </a>
+            </div>
+    
+            <div class="qdr">
+                <h3>Redes Sociais</h3>
+                <a href="#"> <i class="fas fa-phone"></i> Instagram: @Agendsus </a>
+                <a href="#"> <i class="fas fa-phone"></i> Facebook: Agendsus </a>
+                <a href="#"> <i class="fas fa-envelope"></i> Twitter: @Agendsus </a>
+            </div>
+    
+        <div class="fim"> Agendsus</div>
+    
+    </section>
+    </main>
+  </body>
+</html>
