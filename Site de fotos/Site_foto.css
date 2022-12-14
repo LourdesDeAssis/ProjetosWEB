@@ -1,0 +1,144 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+  background-color: #008997;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+
+.nav {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.925);
+    align-items: center;
+}
+
+.logo {
+    block-size: 50px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#rodape {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.925);
+    display: flex;
+    flex-direction: row;
+}
+
+.rodape {
+    background-color: rgba(255, 255, 255, 0.925);
+}
+
+.rodape .qdr-conjunto{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap:1rem;
+    padding: 1rem;
+}
+
+.rodape .qdr-conjunto .qdr h3{
+    font-size: 1.5rem;
+    
+    padding: 0.5rem 0;
+}
+
+.rodape .qdr-conjunto .qdr a{
+    display: block;
+    font-size: 1.0rem;
+    padding: 0.5rem 0;
+    color:#333;
+}
+
+.rodape .qdr-conjunto .qdr a i{
+    padding-right: .5rem;
+    
+}
+
+
+.card_img{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 25px;
+}
+
+.small_img{
+    height: 80%;
+    cursor: pointer;
+    transition: all linear 0.4s;
+}
+.small_img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#modal_img{
+    width: 65vw;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+
+.modal_active #modal_img{
+    transform: scale(1);
+}
+.modal{
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    visibility: hidden;
+    z-index: 1;
+    opacity: 0;
+    transition: visibility 0.8s linear, opacity 0.5s linear;
+}
+
+.modal_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#bt_close{
+    color:#fff;
+    background-color: #000;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 25px;
+    border:solid 1px #fff;
+    transition: all ease-out .4s;
+    cursor: pointer;
+}
+#bt_close:hover{
+    background-color: #f00;
+}
+
+.modal_active{
+    visibility: visible;
+    opacity: 1;
+
+}
