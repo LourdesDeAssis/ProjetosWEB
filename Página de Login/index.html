@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <link rel="stylesheet" href="login.css">
 </head>
@@ -11,8 +11,21 @@
         <div class="container__form container--signup">
           <form action="#" class="form" id="form1">
             <h2 class="form__title">Entrar</h2>
-            <input type="email" placeholder="E-mail" class="input" />
-            <input type="Senha" placeholder="Senha" class="input" />
+            <input class="input" type="email" class="form-control" id="emailContato" placeholder="nome@gmail.com" required>
+         <input type="password" value="" id="myInput" placeholder="Senha" class="input"><br><br>
+          <input type="checkbox" onclick="myFunction()">Mostrar senha
+
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+          }
+          </script>
+            
             
               <button class="btn">Entrar</button>
            
