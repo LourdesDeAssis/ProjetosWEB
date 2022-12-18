@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with JoeBLog landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Pesquisa</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JoeBLog main styles -->
+	<link rel="stylesheet" href="assets/css/pesquisa.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+
+
+        <!-- Page Second Navigation -->
+        <nav class="navbar custom-navbar navbar-expand-md navbar-light bg-primary sticky-top">
+            <div class="container">
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">                     
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="no-sidebar.html">Sobre</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Navegue
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Temas dos Mês</a>
+                                <a class="dropdown-item" href="#">Posts</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Saber mais</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=".../ProjetosWeb/Landing-page/index.html">AGENDSUS</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="pesquisa.html" class="ml-4 btn btn-dark mt-1 btn-sm">Pesquisar blogs</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End Of Page Second Navigation -->
+    
+    <!-- page-header -->
+    <header class="page-header"></header>
+    <!-- end of page header -->
+    
+    <div class="container">
+    <hr>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Procure um titulo" title="Procurar titulo">
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, h5, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                h5 = li[i].getElementsByTagName("h5")[0];
+                txtValue = h5.textContent || h5.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        </script>
+    <hr>
+        <ul id="myUL">
+            <div class="user-cards">
+        
+                
+                <div class="page-container">
+                    <div class="page-content">
+                        
+                                           
+                            <li>
+                                <div class="col-lg-6">
+                                <div class="card text-center mb-5">
+                                    <div class="card-header p-0">                                   
+                                        <div class="blog-media">
+                                            <img src="assets/imgs/blog-2.jpg" alt="" class="w-100">
+                                            <a href="#" class="badge badge-primary">#Coronavírus</a>        
+                                        </div>  
+                                    </div>
+                                    <div class="card-body px-0">
+                                        <a href="#"><h5 class="card-title mb-2">Média de mortes é a mais alta desde agosto</h5></a>    
+                                        <small class="small text-muted">12 de dezembro de 2022
+                                            <span class="px-2">-</span>
+                                            <a href="#" class="text-muted">34 Comentarios</a>
+                                        </small>
+                                        <p class="my-2">O Brasil está com a média de mortes por Covid-19 em alta pelo 24º dia seguido com 124 óbitos diários, de acordo com dados do consórcio de veículos de imprensa desta quinta-feira (15)</p>
+                                    </div>
+                                    
+                                    <div class="card-footer p-0 text-center">
+                                        <a href="post1.html" class="btn btn-outline-dark btn-sm">Leia mais</a>
+                                    </div>                  
+                                </div>
+                                </div>
+                            </li>
+                            <li>
+                            <div class="col-lg-6">
+                                <div class="card text-center mb-5">
+                                    <div class="card-header p-0">                                   
+                                        <div class="blog-media">
+                                            <img src="assets/imgs/blog-6.jpg" alt="" class="w-100">
+                                            <a href="#" class="badge badge-primary">#pesquisa</a>        
+                                        </div>  
+                                    </div>
+                                    <div class="card-body px-0">
+                                        <a href="#"><h5 class="card-title mb-2">Aumento da Telemedicina</h5></a> 
+                                        <small class="small text-muted">10 de dezembro de 2022
+                                            <span class="px-2">-</span>
+                                            <a href="#" class="text-muted">64 Comentarios</a>
+                                        </small>
+                                        <p class="my-2">Telemedicina trata do uso das modernas tecnologias da informação e telecomunicações para o fornecimento de informação e atenção médica a pacientes e outros profissionais de saúde.</p>
+                                    </div>
+                                    
+                                    <div class="card-footer p-0 text-center">
+                                        <a href="single-post.html" class="btn btn-outline-dark btn-sm">Leia mais</a>
+                                    </div>                  
+                                </div>
+                            </div>
+                            </li>
+                        
+                        
+                            <li>                      
+                            <div class="col-lg-6">
+                                <div class="card text-center mb-5">
+                                    <div class="card-header p-0">                                   
+                                        <div class="blog-media">
+                                            <img src="assets/imgs/blog-3.jpg" alt="" class="w-100">
+                                            <a href="#" class="badge badge-primary">#politica</a>       
+                                        </div>  
+                                    </div>
+                                    <div class="card-body px-0">
+                                        <a href="#"><h5 class="card-title mb-2">Mudanças no Sus</h5></a>   
+                                        <small class="small text-muted">8 de dezembro de 2022
+                                            <span class="px-2">-</span>
+                                            <a href="#" class="text-muted">93 Comentarios</a>
+                                        </small>
+                                        <p class="my-2">Enquanto a Carteira norteia a gestão municipal e os profissionais de saúde sobre o cuidado que deve ser realizado nos serviços que são a porta de entrada ao Sistema Único de Saúde (SUS).</p>
+                                    </div>
+                                    
+                                    <div class="card-footer p-0 text-center">
+                                        <a href="single-post.html" class="btn btn-outline-dark btn-sm">Leia mais</a>
+                                    </div>                  
+                                </div>
+                            </div>
+                            </li>
+                            <li>
+                            <div class="col-lg-6">
+                                <div class="card text-center mb-5">
+                                    <div class="card-header p-0">                                   
+                                        <div class="blog-media">
+                                            <img src="assets/imgs/blog-4.jpg" alt="" class="w-100">
+                                            <a href="#" class="badge badge-primary">#vacinação</a>      
+                                        </div>  
+                                    </div>
+                                    <div class="card-body px-0">
+                                        <a href="#"><h5 class="card-title mb-2">Vacinação no país</h5></a>  
+                                        <small class="small text-muted">6 de dezembro de 2022
+                                            <span class="px-2">-</span>
+                                            <a href="#" class="text-muted">112 Comentarios</a>
+                                        </small>
+                                        <p class="my-2">A vacinação contra COVID-19 no Brasil foi iniciada no dia 17 de janeiro de 2021.A vacinação contra COVID-19 no Brasil foi iniciada no dia 17 de janeiro de 2021, em uma coletiva de imprensa</p>
+                                    </div>
+                                    
+                                    <div class="card-footer p-0 text-center">
+                                        <a href="post2.html" class="btn btn-outline-dark btn-sm">Leia mais</a>
+                                    </div>                  
+                                </div>
+                            </div>
+                            </li>
+                        
+                        
+                            <li>                       
+                            <div class="col-lg-6">
+                                <div class="card text-center mb-5">
+                                    <div class="card-header p-0">                                   
+                                        <div class="blog-media">
+                                            <img src="assets/imgs/blog-1.jpg" alt="" class="w-100">
+                                            <a href="#" class="badge badge-primary">#dengue</a>     
+                                        </div>  
+                                    </div>
+                                    <div class="card-body px-0">
+                                        <a href="#"><h5 class="card-title mb-2">Diretrizes nacionais para a dengue</h5> </a>   
+                                        <small class="small text-muted">4 de dezembro de 2022
+                                            <span class="px-2">-</span>
+                                            <a href="#" class="text-muted">120 Comentarios</a>
+                                        </small>
+                                        <p class="my-2">A dengue é a arbovirose urbana mais prevalente nas Américas, principalmente no Brasil. É uma doença febril que tem se mostrado de grande importância em saúde pública nos últimos anos.</p>
+                                    </div>
+                                    
+                                    <div class="card-footer p-0 text-center">
+                                        <a href="post4.html" class="btn btn-outline-dark btn-sm">Leia mais</a>
+                                    </div>                  
+                                </div>
+                            </div>
+                            </li>
+                            <li>
+                            <div class="col-lg-6">
+                                <div class="card text-center mb-5">
+                                    <div class="card-header p-0">                                   
+                                        <div class="blog-media">
+                                            <img src="assets/imgs/blog-5.jpg" alt="" class="w-100">
+                                            <a href="#" class="badge badge-primary">#pesquisa</a>       
+                                        </div>  
+                                    </div>
+                                    <div class="card-body px-0">
+                                        <a href="#"><h5 class="card-title mb-2">Dificuldades na saúde</h5> </a>
+                                        <small class="small text-muted">2 de dezembro de 2022 
+                                            <span class="px-2">-</span>
+                                            <a href="#" class="text-muted">143 Comentarios</a>
+                                        </small>
+                                        <p class="my-2">Telemedicina trata do uso das modernas tecnologias da informação e telecomunicações para o fornecimento de informação e atenção médica a pacientes e outros profissionais de saúde.</p>
+                                    </div>
+                                    
+                                    <div class="card-footer p-0 text-center">
+                                        <a href="single-post.html" class="btn btn-outline-dark btn-sm">Leia mais</a>
+                                    </div>                  
+                                </div>
+                            </div>
+                            </li>
+                            <li>
+                                <div class="col-lg-6">
+                                    <div class="card text-center mb-5">
+                                        <div class="card-header p-0">                                   
+                                            <div class="blog-media">
+                                                <img src="assets/imgs/blog-7.jpg" alt="" class="w-100">
+                                                <a href="#" class="badge badge-primary">#dezembro_vermelho</a>       
+                                            </div>  
+                                        </div>
+                                        <div class="card-body px-0">
+                                            <a href="#"><h5 class="card-title mb-2">Acesso à terapia antirretroviral</h5> </a>
+                                            <small class="small text-muted">1 de dezembro de 2022 
+                                                <span class="px-2">-</span>
+                                                <a href="#" class="text-muted">143 Comentarios</a>
+                                            </small>
+                                            <p class="my-2">No fim de dezembro de 2021, 28,7 milhões de pessoas estavam acessando a terapia antirretroviral. Em 2010, esse número era de 7,8 milhões. Dessas pessoas, 75% acessam tratamento.</p>
+                                        </div>
+                                        
+                                        <div class="card-footer p-0 text-center">
+                                            <a href="post3.html" class="btn btn-outline-dark btn-sm">Leia mais</a>
+                                        </div>                  
+                                    </div>
+                                </div>
+                                </li>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </ul>
+    </div>
+    <!-- Page Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-3 text-center text-md-left mb-3 mb-md-0">
+                    <img src="assets/imgs/logo.svg" alt="" class="logo">
+                </div>
+                <div class="col-md-9 text-center text-md-right">
+                    <div class="socials">
+                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-facebook pr-1"></i> 123,345</a>
+                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-twitter pr-1"></i> 321,534</a>
+                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-pinterest-alt pr-1"></i> 543,312</a>
+                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-instagram pr-1"></i> 123,023</a>
+                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-youtube pr-1"></i> 231,043</a>
+                    </div>
+                </div>  
+            </div>
+            <p class="border-top mb-0 mt-4 pt-3 small">&copy; <script>document.write(new Date().getFullYear())</script>, WebSite Inspirado em <a href="https://www.devcrud.com" class="text-muted font-weight-bold" target="_blank">DevCrud.</a></p> 
+        </div>      
+    </footer>
+    <!-- End of Page Footer -->
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- JoeBLog js -->
+    <script src="assets/js/pesquisa.js"></script>
+
+</body>
+</html>
