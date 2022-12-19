@@ -2,6 +2,8 @@
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" href="login.css">
+    <script src='//www.google.com/recaptcha/api.js' async defer></script>
+
 </head>
 
 <body>
@@ -14,6 +16,10 @@
             <input class="input" type="email" class="form-control" id="emailContato" placeholder="nome@gmail.com" required>
          <input type="password" value="" id="myInput" placeholder="Senha" class="input"><br><br>
           <input type="checkbox" onclick="myFunction()">Mostrar senha
+          <div class="g-recaptcha" data-theme="light" data-size="normal"
+            data-callback="captchaVerified" data-expired-callback="captchaExpired"
+            data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
+          </div>
 
           <script>
           function myFunction() {
@@ -27,9 +33,10 @@
           </script>
             
             
-              <button class="btn">Entrar</button>
+            <button class="btn">Entrar</button>
            
             
+            </form>
           </form>
         </div>
         
@@ -37,5 +44,22 @@
           <div class="image"></div>
         </div>
       </div>
+    </div>
+    
+    <script>
+      // Verification callback function
+      function captchaVerified() {
+          var submitBtn = document.getElementById('submit');
+          submitBtn.removeAttribute('disabled');
+          submitBtn.removeAttribute('aria-disabled');
+          submitBtn.classList.remove('btn-outline-info', 'disabled');
+          submitBtn.classList.add('btn-info');
+      }
+      // Expiration callback function
+      function captchaExpired() {
+          grecaptcha.reset();
+      }
+    </script>
 
+     
 </body>
